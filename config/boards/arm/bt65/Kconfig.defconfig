@@ -32,3 +32,13 @@ config ZMK_KEYBOARD_NAME
 	default "BT65"
 
 endif # BOARD_BT65
+
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
